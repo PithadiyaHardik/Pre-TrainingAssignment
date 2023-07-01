@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.navigationbar {
+  display: flex;
+  flex-direction: row;
+  object-fit: contain;
+  background-color: #212529;
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.logo {
+  display: inline;
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+}
+
+li.navitems {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.1rem;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+}
+
+.navitems a {
+  color: white;
+  text-decoration: none;
+}
+.navitems a:hover {
+  color: red;
+}
+
+.login-button {
+  background-color: green;
+  height: 40px;
+  width: 150px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+}
+
+.signup-button {
+  background-color: rgb(57, 13, 218);
+  height: 40px;
+  width: 70px;
+  border-radius: 6px;
+  border: none;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  opacity: 0.8;
+}
+
+.carousel {
+  margin: 0;
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.carousel-slide {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  transition: 400ms opacity ease-in-out;
+}
+
+.carousel-slide[active-slide] {
+  opacity: 1;
+}
+.carousel-button-prev,
+.carousel-button-next {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  background-color: black;
+  border: none;
+  z-index: 3;
+  height: 40px;
+  width: 40px;
+  font-size: 2rem;
+}
+
+.carousel-button-prev:focus,
+.carousel-button-next:focus {
+  outline: 1px solid black;
+}
+.carousel-button-prev {
+  left: 3%;
+}
+
+.carousel-button-next {
+  right: 3%;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 2.5%;
+}
+
+.menu-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bolder;
+  /* box-shadow: 2px 2px 2px 2px rgb(97, 97, 97); */
+  /* margin: 3px; */
+  background-color: antiquewhite;
+}
+.pizza-menu {
+  color: black;
+  /* background-color: black; */
+  background-image: url("menubg.jpg");
+  background-size: cover;
+  opacity: 0.7;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.pizza-menu-columns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.pizza-menu-item {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.menu-header,
+.aboutus-header,
+.contactus-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  margin: 20px;
+}
+
+.aboutus-text {
+  font-size: 1.2rem;
+  align-self: center;
+  text-align: center;
+  margin: 5px;
+}
+
+.contactus {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 20px;
+}
+
+.contactus-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  font-size: 1.2rem;
+}
+
+.contactus-item-header {
+  font-weight: bold;
+  font-size: 2rem;
+}

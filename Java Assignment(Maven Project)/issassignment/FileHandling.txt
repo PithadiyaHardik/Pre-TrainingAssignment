@@ -1,0 +1,1 @@
+This is ans example of writing in file using FileWriter.This is to be appended at the end
